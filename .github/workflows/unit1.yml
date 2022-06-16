@@ -1,0 +1,14 @@
+name: Unit1 Test
+on: 
+  pull_request:
+    types: [opened, reopened]
+    paths: ["unit1/e*"]
+  branches-ignore: ["master", "main"]
+jobs: 
+  test:
+    name: "Test exercies"
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v3
+      - run: ls -hla
+      
