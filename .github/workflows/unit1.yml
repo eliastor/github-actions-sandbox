@@ -3,7 +3,7 @@ on:
   pull_request:
     types: [opened, reopened]
     paths: ["unit1/e*"]
-  branches-ignore: ["master", "main"]
+    branches-ignore: ["master", "main"]
 jobs: 
   test:
     name: "Test exercies"
